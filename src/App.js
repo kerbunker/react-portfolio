@@ -14,7 +14,7 @@ function App() {
     if (selectedPage === 'About') {
       return <About />
     }
-    if (selectedPage === "portfolio") {
+    if (selectedPage === "Portfolio") {
       return <Portfolio />;
     }
     if (selectedPage === 'Contact') {
@@ -28,8 +28,8 @@ function App() {
   return (
     <div>
       <header>
-        <h1>
-          <a href="/">Bunker</a></h1>
+        <h1 className='header'>
+          <a className='heading' href="/" >Bunker</a></h1>
         <Nav selectedPage = {selectedPage} handlePageChange={handlePageChange} />
       </header>
       <main>

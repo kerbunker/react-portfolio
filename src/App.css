@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+:root {
+  --drk-bg-color: rgb(58, 17, 58);
+}
+body {
+  background-color: rgb(116, 47, 116);
+  font-family: 'Montserrat', sans-serif;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  align-self: center;
+  color: var(--drk-bg-color);
+  text-decoration: none;
+  font-size: 8vw;
+  border: 2.7px solid;
+  border-radius: 7px;
+  padding: 0.5vw 25vw;
+  background: rgb(98, 19, 67);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 19, 67, 1) 0%,
+    rgba(189, 99, 227, 1) 100%
+  );
+  box-shadow: 10px 15px 15px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4vw;
+  margin: 1vw 8vw;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--drk-bg-color);
+}
+
+.nav-item-active {
+  color: rgb(53, 102, 158);
+  background-color: var(--drk-bg-color);
+  border-radius: 10%;
+  text-decoration: none;
+  padding: 0.3rem;
+  border: solid 2px black;
+  box-shadow: 10px 15px 15px black;
+}
+
+.about-container {
+  background-color: rgb(167, 86, 202);
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2.7px solid;
+  border-radius: 4px;
+  width: 90%;
+  margin: auto;
+  margin-top: 8vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portrait {
+  border: solid 2px black;
+  border-radius: 4px;
+  display: flex;
+  height: 50%;
+  width: 50%;
+}
+
+.about-header,
+.portfolio-header,
+.resume-header,
+.contact-header {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--drk-bg-color);
+  font-size: 4vw;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.about-text {
+  font-size: 2.5vw;
+  padding: 2vw;
+  color: var(--drk-bg-color);
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-icon {
+  margin: 5px;
 }

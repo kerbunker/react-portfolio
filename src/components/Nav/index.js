@@ -3,30 +3,30 @@ import React from 'react';
 function Nav({ selectedPage, handlePageChange }) {
 
   return (
-    <nav>
+
       <ul className="nav">
-        <li className="nav-item">
-          <a href='#about' onClick={() => handlePageChange('About')} className={selectedPage === 'About' ? 'active' : 'disabled'}>
+        <li>
+          <a href='#about' onClick={() => handlePageChange('About')} className={selectedPage === 'About' ? 'nav-item-active' : 'nav-item'}>
             About me
           </a>
         </li>
         <li className="nav-item">
-          <a href='#portfolio' onClick={() => handlePageChange('Portfolio')} className={selectedPage === 'Portfolio' ? 'active' : 'disabled'}>
+          <a href='#portfolio' onClick={() => handlePageChange('Portfolio')} className={selectedPage === 'Portfolio' ? 'nav-item-active' : 'nav-item'}>
             Portfolio
           </a>
         </li>
         <li className="nav-item">
-          <a href='#contact' onClick={() => handlePageChange('Contact')} className={selectedPage === 'Contact' ? 'active' : 'disabled'}>
+          <a href='#contact' onClick={() => handlePageChange('Contact')} className={selectedPage === 'Contact' ? 'nav-item-active' : 'nav-item'}>
             Contact
           </a>
         </li>
         <li className="nav-item">
-          <a href='#resume' onClick={() => handlePageChange('Resume')} className={selectedPage === 'Resume' ? 'navAtive' : 'disabled'}>
-            About me
+          <a href='#resume' onClick={() => handlePageChange('Resume')} className={selectedPage === 'Resume' ? 'nav-item-active' : 'nav-item'}>
+            Resume
           </a>
         </li>
       </ul>
-    </nav>
+
   );
 }
 
