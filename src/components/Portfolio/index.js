@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import gitIcon from '../../assets/icons/GitHub-Mark-Light-32px.png';
 //import Project from '../ProjectList';
 //import { capitalizeFirstLetter } from '../../utils/helpers';
 
@@ -13,7 +14,7 @@ function Portfolio() {
     },
     {
       name: "Hangman's Revenge",
-      desctiption: "JavaScript/API",
+      description: "JavaScript/API",
       image_desc: "A new game with no quesses made",
       repo_url: "https://github.com/CyanideTheJuggla/hangmans-revenge",
       url: "https://cyanidethejuggla.github.io/hangmans-revenge/"
@@ -44,17 +45,25 @@ function Portfolio() {
   const [currentProject, setCurrentProject] = useState(projects[0]);
 
   return (
-    <div className="flex-row">
+    <div className="portfolio-container">
+      <h1 className='portfolio-header'>Recent Work</h1>
       {projects.map((proj, i) => (
-        <div>
+        <div className='img-wrap'>
         <img
           src={require(`../../assets/images/${i+1}.PNG`)}
           alt={proj.image_desc}
           className="mx-1"
           key={proj.name}
+          height={300}
+          width={400}
         />
-        <div>
-          <p>{proj.name}</p>
+        <div className='img-description'>
+          <div>
+          <a href={proj.url} className="img-link">{proj.name}</a>
+          <a href={proj.repo_url} className="repo-link">
+            <img src={gitIcon} alt="github icon" />
+          </a>
+          </div>
           <p>{proj.description}</p>
         </div>
         </div>

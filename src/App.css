@@ -97,6 +97,37 @@ body {
   text-align: center;
 }
 
+.img-wrap {
+  position: relative;
+  height: 300px;
+  width: 400px;
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--drk-bg-color);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: .75;
+}
+
+.img-link,
+.repo-link {
+  color: #fff;
+  text-decoration: none;
+}
+
 footer {
   display: flex;
   flex-direction: row;
