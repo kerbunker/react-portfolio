@@ -52,7 +52,8 @@ body {
   box-shadow: 10px 15px 15px black;
 }
 
-.about-container {
+.about-container,
+.portfolio-container {
   background-color: rgb(167, 86, 202);
   display: flex;
   flex-direction: column;
@@ -99,12 +100,17 @@ body {
 
 .img-wrap {
   position: relative;
+  margin: 50px 0 50px 0;
   height: 300px;
   width: 400px;
+  border: solid 2px black;
+  box-shadow: 10px 15px 15px black;
 }
 
 .img-description {
   position: absolute;
+  text-align: center;
+  padding-top: 100px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -119,14 +125,28 @@ body {
 
 .img-wrap:hover .img-description {
   visibility: visible;
-  opacity: .75;
+  opacity: .9;
 }
 
-.img-link,
-.repo-link {
+.img-link {
   color: #fff;
   text-decoration: none;
+  padding: 5px;
+  opacity: .5;
+  font-size: 30px;
 }
+
+.img-link:hover {
+  opacity: 1;
+}
+
+.portfolio-section {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 footer {
   display: flex;
