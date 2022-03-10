@@ -29,7 +29,7 @@ function App() {
     <div>
       <header>
         <h1 className='header'>
-          <a className='heading' href="/" >Bunker</a></h1>
+          <a className='heading' href="/" >Katelyn Bunker</a></h1>
         <Nav selectedPage = {selectedPage} handlePageChange={handlePageChange} />
       </header>
       <main>
