@@ -8,7 +8,7 @@ function About() {
       <div className='about'>
         <img src={profilePic} className="portrait" alt="recent photo of Katelyn Bunker" />
       
-        <p className='about-text'>Hi, I'm Katelyn Bunker! I am an inspiring full stack developer. I have a background in Chemistry but I am ready for a change.</p>
+        <p className='about-text'>Hi, I'm Katelyn Bunker! I am an aspiring full stack developer. I have a background in Chemistry but I am ready for a change.</p>
       </div>
     </section>
   );
