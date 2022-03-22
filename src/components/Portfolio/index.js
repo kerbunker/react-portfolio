@@ -6,6 +6,13 @@ import gitIcon from "../../assets/icons/GitHub-Mark-Light-32px.png";
 function Portfolio() {
   const [projects] = useState([
     {
+      name: "Social Rolls",
+      description: "MERN/GraphQL",
+      image_desc: "Dashboard showing header and one example post",
+      repo_url: "https://github.com/KrisSmith7/roll-initiative",
+      url: "https://socialrolls.herokuapp.com/"
+    },
+    {
       name: "Game Corner",
       description: "Node/SQL",
       image_desc: "Landing page for Game Corner",
