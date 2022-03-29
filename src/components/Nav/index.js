@@ -4,8 +4,9 @@ function Nav({ selectedPage, handlePageChange }) {
 
   return (
 
-      <ul className="nav">
-        <li>
+      <ul className="bg-indigo-500 flex justify-around flex-col md:flex-row text-center">
+        
+        <li className='bg-indigo-300'>
           <a href='#about' onClick={() => handlePageChange('About')} className={selectedPage === 'About' ? 'nav-item-active' : 'nav-item'}>
             About me
           </a>
@@ -25,6 +26,7 @@ function Nav({ selectedPage, handlePageChange }) {
             Resume
           </a>
         </li>
+        
       </ul>
 
   );
