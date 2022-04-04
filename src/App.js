@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className='w-screen'>
-      <img src={bkgrd} className="absolute w-full bg-cover z-[-100] brightness-50" alt="pattern-background" />
+      <img src={bkgrd} className="absolute object-cover w-screen z-[-100] brightness-50" alt="pattern-background" />
       <header className=" pt-2">
       
         <div className='flex justify-center'>
@@ -38,7 +38,7 @@ function App() {
         </div>
         <Nav selectedPage = {selectedPage} handlePageChange={handlePageChange} />
       </header>
-      <main>
+      <main className='bg-black'>
         {renderPage()}
       </main>
       <Footer />
