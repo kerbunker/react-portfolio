@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import './App.css';
+import bkgrd from './assets/images/bkgd-image.jpg';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('About');
@@ -27,10 +28,12 @@ function App() {
 
   return (
     <div className='w-screen'>
-      <header className='bg-gradient-to-r from-cyan-500 to-indigo-400 pt-2 '>
+      <img src={bkgrd} className="absolute w-full bg-cover z-[-100] brightness-50" alt="pattern-background" />
+      <header className=" pt-2">
+      
         <div className='flex justify-center'>
         <h1 className='flex justify-center py-6 mx-8 mb-2 flex w-5/6 bg-indigo-500/40 border-4 border-double border-cyan-400 rounded-full shadow-md shadow-black'>
-          <a className='text-blue-800 w-full justify-center items-center text-center text-4xl md:text-6xl font-semibold' href="/" >Katelyn Bunker</a>
+          <p className='text-blue-200 w-full justify-center items-center text-center text-4xl md:text-6xl font-semibold' >Katelyn Bunker</p>
         </h1>
         </div>
         <Nav selectedPage = {selectedPage} handlePageChange={handlePageChange} />
