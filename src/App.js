@@ -27,7 +27,7 @@ function App() {
   const handlePageChange = page => setSelectedPage(page);
 
   return (
-    <div className='w-screen'>
+    <div className='w-screen h-screen flex flex-col justify-between'>
       <img src={bkgrd} className="absolute object-cover w-screen z-[-100] brightness-50" alt="pattern-background" />
       <header className=" pt-2">
       
@@ -38,7 +38,7 @@ function App() {
         </div>
         <Nav selectedPage = {selectedPage} handlePageChange={handlePageChange} />
       </header>
-      <main className='bg-black'>
+      <main className='bg-black mb-auto'>
         {renderPage()}
       </main>
       <Footer />

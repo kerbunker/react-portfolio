@@ -27,7 +27,7 @@ function Portfolio() {
       url: "https://cyanidethejuggla.github.io/hangmans-revenge/",
     },
     {
-      name: "Weather Dashbaord",
+      name: "Weather Dashboard",
       description: "API",
       image_desc: "The weather for 5 days in Raleigh",
       repo_url: "https://github.com/kerbunker/weather-dashboard",
@@ -42,7 +42,7 @@ function Portfolio() {
     },
     {
       name: "Budgeter's Friend",
-      description: "PWA",
+      description: "PWA/MongoDB",
       image_desc: "Budget with five data points",
       repo_url: "https://github.com/kerbunker/budgeters-friend",
       url: "https://nameless-thicket-77989.herokuapp.com/",
@@ -52,32 +52,34 @@ function Portfolio() {
   const [currentProject, setCurrentProject] = useState(projects[0]);
 
   return (
-    <section className="portfolio-section">
-      <div className="portfolio-container">
-        <h1 className="portfolio-header">Recent Work</h1>
+    <section className="bg-purple-900/40 pb-2">
+      <div >
+        <h1 className="text-indigo-200/70 underline underline-offset-8 pt-2 text-center text-4xl pb-8">Recent Work</h1>
+        <div className="flex justify-around flex-row flex-wrap bg-purple-300/40 mx-12 rounded">
         {projects.map((proj, i) => (
-          <div className="img-wrap">
+          <div className="img-wrap relative mx-4 flex flex-row rounded my-4">
             <img
               src={require(`../../assets/images/${i + 1}.PNG`)}
               alt={proj.image_desc}
-              className="img"
+              className="img my-2"
               key={proj.name}
               height={300}
               width={400}
             />
-            <div className="img-description">
-              <div>
-                <a href={proj.url} target="_blank" className="img-link">
+            <div className="img-description pt-20 opacity-0 hover:opacity-80 bg-black w-full h-full absolute text-center px-6">
+              <div className="flex flex-row justify-center">
+                <a href={proj.url} target="_blank" className="img-link text-indigo-300 text-2xl hover:text-3xl opacity-70 hover:opacity-100 pr-2 items-center">
                   {proj.name}
                 </a>
-                <a href={proj.repo_url} target="_blank" className="img-link">
-                  <img src={gitIcon} alt="github icon" />
+                <a href={proj.repo_url} target="_blank" className="img-link opacity-70 hover:opacity-100">
+                  <img src={gitIcon} alt="github icon" className="opacity-70 hover:opacity-100"/>
                 </a>
               </div>
-              <p>{proj.description}</p>
+              <p className="text-indigo-300 text-xl">{proj.description}</p>
             </div>
           </div>
         ))}
+        </div>
       </div>
     </section>
   );
