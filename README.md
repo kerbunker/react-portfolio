@@ -12,7 +12,9 @@ To install this app, clone the github repositiory and run `npm install` to insta
 
 Once the app and packages have been installed, run `npm start` to start the server. Since the app has been deployed to github pages, you can see the deployed app [here](https://kerbunker.github.io/react-portfolio/).
 
-![portfolio page with a recent project](./assets/screenshot.PNG)
+![about page with a photo and about section](./assets/about-screenshot.PNG)
+
+![portfolio page with a recent project](./assets/portfolio-screenshot.PNG)
 
 ## Questions
 
