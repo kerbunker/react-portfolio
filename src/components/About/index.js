@@ -3,9 +3,9 @@ import profilePic from "../../assets/prof-pic.png";
 
 function About() {
   return (
-    <section className="bg-purple-900/40 pb-2">
-      <h1 id="about" className='text-indigo-200/70 underline underline-offset-8 pb-12 pt-2 text-center text-4xl'>About Me</h1>
-      <div className='about flex flex-col md:flex-row justify-around bg-purple-300/40 mx-12 rounded mb-6'>
+    <section className="bg-purple-900/40 pb-2 flex-grow">
+      <h1 className='text-indigo-200/70 underline underline-offset-8 pb-12 pt-2 text-center text-4xl'>About Me</h1>
+      <div className='about flex flex-col md:flex-row justify-around bg-indigo-300/40 mx-12 rounded mb-6'>
         <div className='flex justify-center py-6 mx-6 basis-1/3 shrink-0'>
           <img src={profilePic} className="" alt="recent photo of Katelyn Bunker" />
         </div>

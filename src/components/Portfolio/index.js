@@ -55,27 +55,27 @@ function Portfolio() {
     <section className="bg-purple-900/40 pb-2">
       <div >
         <h1 className="text-indigo-200/70 underline underline-offset-8 pt-2 text-center text-4xl pb-8">Recent Work</h1>
-        <div className="flex justify-around flex-row flex-wrap bg-purple-300/40 mx-12 rounded">
+        <div className="flex justify-around flex-row flex-wrap bg-indigo-300/40 mx-12 mb-6 rounded">
         {projects.map((proj, i) => (
-          <div className="img-wrap relative mx-4 flex flex-row rounded my-4">
+          <div className="img-wrap md:relative mx-4 flex flex-col md:flex-row rounded my-4 ">
             <img
               src={require(`../../assets/images/${i + 1}.PNG`)}
               alt={proj.image_desc}
-              className="img my-2"
+              className="img shadow-md shadow-black"
               key={proj.name}
               height={300}
               width={400}
             />
-            <div className="img-description pt-20 opacity-0 hover:opacity-80 bg-black w-full h-full absolute text-center px-6">
-              <div className="flex flex-row justify-center">
-                <a href={proj.url} target="_blank" className="img-link text-indigo-300 text-2xl hover:text-3xl opacity-70 hover:opacity-100 pr-2 items-center">
+            <div className="pt-2 md:pt-20 md:opacity-0 hover:opacity-80 md:bg-black w-full h-full md:absolute text-center px-6">
+              <div className="flex flex-row justify-center items-center">
+                <a href={proj.url} target="_blank" className="img-link text-black font-bold md:text-indigo-300 text-2xl hover:text-3xl opacity-70 hover:opacity-100 pr-2 items-center">
                   {proj.name}
                 </a>
                 <a href={proj.repo_url} target="_blank" className="img-link opacity-70 hover:opacity-100">
                   <img src={gitIcon} alt="github icon" className="opacity-70 hover:opacity-100"/>
                 </a>
               </div>
-              <p className="text-indigo-300 text-xl">{proj.description}</p>
+              <p className="text-black md:text-indigo-300 text-xl">{proj.description}</p>
             </div>
           </div>
         ))}

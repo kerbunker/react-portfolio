@@ -4,8 +4,8 @@ import linkedIcon from '../../assets/icons/linkedin.png';
 
 function Footer() {
   return (
-    <footer className='bg-black flex justify-center items-center flex-grow'>
-      <div className='bg-purple-300/40 p-2 rounded opacity-60 hover:opacity-100'>
+    <footer className='bg-black flex justify-center items-center'>
+      <div className='bg-indigo-300 p-2 rounded opacity-60 hover:opacity-100'>
         <a href="http://github.com/kerbunker" target="_blank">
           <img
             src={gitIcon}

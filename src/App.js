@@ -32,13 +32,13 @@ function App() {
       <header className=" pt-2">
       
         <div className='flex justify-center'>
-        <h1 className='flex justify-center py-6 mx-8 mb-2 flex w-5/6 bg-indigo-500/40 border-4 border-double border-cyan-400 rounded-full shadow-md shadow-black'>
+        <h1 className='flex justify-center py-6 mx-8 mb-2 flex w-5/6 bg-indigo-500/40 border-4 border-solid border-black rounded-full shadow-md shadow-black'>
           <p className='text-blue-200 w-full justify-center items-center text-center text-4xl md:text-6xl font-semibold' >Katelyn Bunker</p>
         </h1>
         </div>
         <Nav selectedPage = {selectedPage} handlePageChange={handlePageChange} />
       </header>
-      <main className='bg-black mb-auto'>
+      <main className='bg-black mb-auto flex-grow'>
         {renderPage()}
       </main>
       <Footer />
