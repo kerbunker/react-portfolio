@@ -10,7 +10,7 @@ function About() {
           <img src={profilePic} className="" alt="recent photo of Katelyn Bunker" />
         </div>
         <div className='px-6 py-12 flex items-center'>
-           <p className='text-indigo-300 align-left text-lg lg:text-2xl md:border-b-4 md:border-indigo-300/80 pt-4  md:border-t-4 pb-4'>Hi, I'm Katelyn Bunker! I recently graduated from UNC Chapel Hill Full Stack Development boot camp. I have a backgraound in chemistry but I am ready for a change. Before the boot camp, I previously took online classes from NC State in Java and C programming. I am passionate about learning and practice my skills for all aspects of full stack development.</p>
+           <p className='text-indigo-300 align-left text-lg lg:text-2xl md:border-b-4 md:border-indigo-300/80 pt-4  md:border-t-4 pb-4'>Hi, I'm Katelyn Bunker! I recently graduated from UNC Chapel Hill Full Stack Development boot camp. I have a background in chemistry but I am ready for a change. Before the boot camp, I previously took online classes from NC State in Java and C programming. I am passionate about learning and practice my skills for all aspects of full stack development.</p>
         </div>
        
       </div>
