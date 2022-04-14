@@ -67,7 +67,7 @@ function Portfolio() {
               width={400}
             />
             <div className="pt-2 md:pt-20 md:opacity-0 hover:opacity-80 md:bg-black w-full h-full md:absolute text-center px-6">
-              <div className="flex flex-row justify-center items-center">
+              <div className="flex flex-row justify-center items-center h-12">
                 <a href={proj.url} target="_blank" className="img-link text-black font-bold md:text-indigo-300 text-2xl hover:text-3xl opacity-70 hover:opacity-100 pr-2 items-center">
                   {proj.name}
                 </a>

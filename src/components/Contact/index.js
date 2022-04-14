@@ -45,7 +45,7 @@ function ContactForm() {
           <img src={contactPic} className="p-12" alt="coffee mug next to laptop keyboard with sticky note saying Contact me" />
         </div>
         <div className='bg-indigo-300/40 rounded px-10 my-10 md:py-10'>
-          <div className='flex flex-row items-center pr-20 py-10'>
+          <div className='flex flex-row items-center pr-20 py-10 w-72'>
             <img
               src={emailIcon}
               alt="email icon"
