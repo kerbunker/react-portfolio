@@ -33,7 +33,7 @@ function Resume() {
                   </ul>
               </div>
           </div>
-          <div >
+          <div className="h-32">
               <div className="flex justify-center pb-4" >
                   <a href="Resume.pdf" download="Katelyn Bunker Resume" className="bg-indigo-300 hover:bg-purple-300/80 shadow-md shadow-black rounded-full p-4 border-4 border-black border-solid text-xl hover:text-2xl">Click to download my resume!</a>
               </div>
